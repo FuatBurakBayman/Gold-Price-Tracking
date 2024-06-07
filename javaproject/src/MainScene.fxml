@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="137.0" layoutY="72.0" prefHeight="604.0" prefWidth="820.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="42.0" prefWidth="981.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="1.0" prefHeight="42.0" prefWidth="200.0" styleClass="upside" stylesheets="@application.css">
+                           <children>
+                              <Label layoutX="67.0" layoutY="13.0" text="Altın Sistemi" />
+                           </children>
+                        </AnchorPane>
+                        <Circle fx:id="top_profile" fill="DODGERBLUE" layoutX="883.0" layoutY="22.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="912.0" layoutY="14.0" text="Active" />
+                        <Circle fill="#4eda1b" layoutX="960.0" layoutY="22.0" radius="7.0" stroke="#4eda1b" strokeType="INSIDE" />
+                        <Label fx:id="top_username" layoutX="807.0" layoutY="13.0" text="Burak" />
+                        <Label layoutX="728.0" layoutY="13.0" text="Welcome" />
+                        <Label fx:id="current_form" layoutX="214.0" layoutY="13.0" prefHeight="17.0" prefWidth="238.0" text="Dashboard Form">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="date_time" alignment="CENTER_RIGHT" layoutX="546.0" layoutY="13.0" prefHeight="17.0" prefWidth="156.0" text="MM.DD.YYYY" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="upside_background" />
+                        <String fx:value="upside_border" />
+                     </styleClass>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="159.0" prefHeight="559.0" prefWidth="197.0" styleClass="nav-form" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <FontAwesomeIcon glyphName="USER" layoutX="67.0" layoutY="86.0" size="7em" />
+                              <Label fx:id="nav_adminID" layoutX="84.0" layoutY="132.0" text="1">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="5.0" layoutY="98.0" prefHeight="23.0" prefWidth="190.0" text="Hoşgeldin">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="87.5" layoutX="106.0" layoutY="176.0" startX="-100.0" />
+                              <JFXButton fx:id="home_btn" layoutX="10.0" layoutY="195.0" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@application.css" text="Home">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="HOME" size="1.5em" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="settings_btn" layoutX="10.0" layoutY="300.0" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@application.css" text="Ayarlar">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="CLIPBOARD" size="1.5em" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="logout_btn" layoutX="10.0" layoutY="510.0" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@application.css" text="Oturumu Kapat">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="SIGN_OUT" size="1.5em" />
+                                 </graphic>
+                              </JFXButton>
+                              <Label layoutX="14.0" layoutY="132.0" text="Admin ID:">
+                                 <font>
+                                    <Font name="Tahoma" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="154.0" text="UserName:">
+                                 <font>
+                                    <Font name="Tahoma" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="nav_username" layoutX="84.0" layoutY="154.0" text="Burak">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="current_prices_btn" layoutX="10.0" layoutY="230.0" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@application.css" text="Mevcut Fiyatlar">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="BOOK" size="1.5em" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="price_btn" layoutX="10.0" layoutY="265.0" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@application.css" text="Fiyat Oluştur">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="PLUS_CIRCLE" size="1.5em" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="layer_main" layoutX="111.0" layoutY="122.0" prefHeight="559.0" prefWidth="705.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="9.0" layoutY="10.0" prefHeight="540.0" prefWidth="764.0" stylesheets="@application.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane prefHeight="214.0" prefWidth="763.0" stylesheets="@application.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <AnchorPane fx:id="dashboard_one" layoutX="8.0" layoutY="7.0" prefHeight="200.0" prefWidth="110.0" styleClass="nav_form_inside_1" stylesheets="@application.css">
+                                             <padding>
+                                                <Insets right="20.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXButton fx:id="add_top_product_1" layoutX="32.0" layoutY="82.0" onAction="#show_product" prefHeight="36.0" prefWidth="46.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children></AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one1" layoutX="248.0" layoutY="7.0" prefHeight="200.0" prefWidth="110.0" styleClass="nav_form_inside_11" stylesheets="@application.css">
+                                             <children>
+                                                <JFXButton fx:id="add_top_product_3" layoutX="32.0" layoutY="82.0" onAction="#show_product" prefHeight="36.0" prefWidth="46.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one2" layoutX="127.0" layoutY="7.0" prefHeight="200.0" prefWidth="110.0" styleClass="nav_form_inside_11" stylesheets="@application.css">
+                                             <children>
+                                                <JFXButton fx:id="add_top_product_2" layoutX="32.0" layoutY="82.0" onAction="#show_product" prefHeight="36.0" prefWidth="46.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one11" layoutX="374.0" layoutY="7.0" prefHeight="200.0" prefWidth="110.0" styleClass="nav_form_inside_111" stylesheets="@application.css">
+                                             <children>
+                                                <JFXButton fx:id="add_top_product_4" layoutX="32.0" layoutY="82.0" onAction="#show_product" prefHeight="36.0" prefWidth="46.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one111" layoutX="497.0" layoutY="7.0" prefHeight="200.0" prefWidth="253.0" styleClass="nav_form_inside_1111" stylesheets="@application.css">
+                                             <children>
+                                                <JFXButton fx:id="add_top_product_5" layoutX="103.0" layoutY="82.0" onAction="#show_product" prefHeight="36.0" prefWidth="46.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="14.0" layoutY="224.0" prefHeight="299.0" prefWidth="346.0" stylesheets="@application.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <AnchorPane fx:id="dashboard_one3" layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="310.0" styleClass="nav_form_inside_1" stylesheets="@application.css">
+                                             <padding>
+                                                <Insets right="20.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXButton fx:id="add_left_bottom_product_1" layoutX="135.0" layoutY="7.0" prefHeight="34.0" prefWidth="35.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one31" layoutX="14.0" layoutY="87.0" prefHeight="50.0" prefWidth="310.0" styleClass="nav_form_inside_1" stylesheets="@application.css">
+                                             <padding>
+                                                <Insets right="30.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXButton fx:id="add_left_bottom_product_2" layoutX="135.0" layoutY="10.0" prefHeight="34.0" prefWidth="35.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one311" layoutX="14.0" layoutY="160.0" prefHeight="50.0" prefWidth="310.0" styleClass="nav_form_inside_1" stylesheets="@application.css">
+                                             <padding>
+                                                <Insets right="20.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXButton fx:id="add_left_bottom_product_3" layoutX="135.0" layoutY="10.0" prefHeight="34.0" prefWidth="35.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dashboard_one3111" layoutX="14.0" layoutY="234.0" prefHeight="50.0" prefWidth="310.0" styleClass="nav_form_inside_1" stylesheets="@application.css">
+                                             <padding>
+                                                <Insets right="20.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXButton fx:id="add_left_bottom_product_4" layoutX="135.0" layoutY="7.0" prefHeight="34.0" prefWidth="35.0" styleClass="add_btn" text="+">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="377.0" layoutY="224.0" prefHeight="110.0" prefWidth="367.0" stylesheets="@application.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="377.0" layoutY="347.0" prefHeight="165.0" prefWidth="367.0" stylesheets="@application.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="layer_available_products" layoutX="291.0" layoutY="180.0" prefHeight="559.0" prefWidth="781.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="8.0" layoutY="12.0" prefHeight="535.0" prefWidth="765.0" stylesheets="@application.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView layoutX="17.0" layoutY="46.0" prefHeight="475.0" prefWidth="731.0" stylesheets="@application.css">
+                                      <columns>
+                                        <TableColumn prefWidth="84.0" text="ÜRÜN ID" />
+                                          <TableColumn prefWidth="168.0" text="ÜRÜN İSMİ" />
+                                          <TableColumn minWidth="0.0" prefWidth="0.0" text="BARKOD" />
+                                          <TableColumn prefWidth="113.0" text="TARİH" />
+                                          <TableColumn prefWidth="127.0" text="AYAR" />
+                                          <TableColumn prefWidth="110.0" text="ÜRÜN FİYATI" />
+                                          <TableColumn prefWidth="153.0" text="ÜRÜN FİYATI" />
+                                      </columns>
+                                    </TableView>
+                                    <Label layoutX="8.0" layoutY="7.0" styleClass="header" stylesheets="@application.css" text="Ürünler">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

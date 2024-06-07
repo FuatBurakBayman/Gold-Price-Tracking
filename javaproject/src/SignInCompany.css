@@ -1,0 +1,14 @@
+.backside{
+    -fx-background-color: linear-gradient(to bottom right, #ff4500, #1e90ff); /* Turuncu ve mavi */
+}
+.company_name_text{ 
+    -fx-border-color: white;
+    -fx-background-color: transparent;
+    -fx-border-radius: 8px 8px 8px 8px;
+    -fx-text-fill: white;
+
+}   
+.button_Sign_In{
+    -fx-border-color: white;
+    -fx-border-radius: 8px 8px 8px 8px;
+}

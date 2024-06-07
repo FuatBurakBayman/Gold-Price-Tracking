@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CompanyAskController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="backside" stylesheets="@SignInCompany.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="14.0" prefHeight="35.0" prefWidth="155.0" text="CREATE COMPANY">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Company_Name" layoutX="28.0" layoutY="131.0" prefHeight="35.0" prefWidth="155.0" styleClass="company_name_text" stylesheets="@SignInCompany.css" />
+            <Label layoutX="31.0" layoutY="102.0" prefHeight="20.0" prefWidth="104.0" styleClass="textbackground" stylesheets="@SignInCompany.css" text="Company Name" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="185.0" prefHeight="18.0" prefWidth="91.0" text="Company Tel" textFill="#e7e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="264.0" prefHeight="20.0" prefWidth="270.0" text="How can other people find your company" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="Sign_In_Company" layoutX="73.0" layoutY="378.0" onAction="#Sign_In_Company_clicked" prefHeight="43.0" prefWidth="164.0" styleClass="button_Sign_In" stylesheets="@SignInCompany.css" text="Sign In Company" />
+            <TextField fx:id="Company_Tel" layoutX="28.0" layoutY="213.0" prefHeight="35.0" prefWidth="155.0" styleClass="company_name_text" stylesheets="@SignInCompany.css" />
+            <TextField fx:id="Company_Name_Find" layoutX="31.0" layoutY="293.0" prefHeight="35.0" prefWidth="155.0" styleClass="company_name_text" stylesheets="@SignInCompany.css" />
+            <FontAwesomeIcon fx:id="explanation" glyphName="QUESTION" layoutX="194.0" layoutY="157.0" size="2em" text="" wrappingWidth="6.857142925262451" />
+            <FontAwesomeIcon fx:id="explanation" glyphName="QUESTION" layoutX="197.0" layoutY="319.0" size="2em" text="" wrappingWidth="6.857142925262451" />
+            <FontAwesomeIcon fx:id="explanation" glyphName="QUESTION" layoutX="191.0" layoutY="239.0" size="2em" text="" wrappingWidth="6.857142925262451" />
+            <Label fx:id="messagelabel" alignment="CENTER" layoutX="87.0" layoutY="49.0" prefHeight="20.0" prefWidth="134.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

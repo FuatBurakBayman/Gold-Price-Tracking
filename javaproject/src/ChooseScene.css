@@ -1,0 +1,17 @@
+.nav{
+    -fx-background-color: #212B35;
+}
+.right_side_layer{
+    -fx-background-color:  #D5DDE3;
+}
+.right_side_buttons_radius{
+    -fx-background-radius: 15px; 
+}
+.right_side_choose_product_selected{
+    -fx-background-radius: 10px;
+    -fx-background-color: #A1B3C1;
+}
+.right_side_choose_product_unselected{
+    -fx-background-radius: 10px;
+    -fx-background-color: white;
+}

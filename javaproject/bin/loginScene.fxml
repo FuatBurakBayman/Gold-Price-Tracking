@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="menu_layer" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="460.0">
+               <children>
+                  <VBox fx:id="layer3" prefHeight="460.0" prefWidth="460.0" styleClass="second_side_background_color" stylesheets="@LoginScene.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="98.0" prefWidth="458.0">
+                                 <children>
+                                    <JFXButton fx:id="Login_scene_button" layoutX="354.0" layoutY="15.0" onMouseClicked="#login_clicked" prefHeight="37.0" prefWidth="90.0" styleClass="login_button_clicked" stylesheets="@LoginScene.css" text="Login" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Sign_scene_button" layoutX="263.0" layoutY="15.0" onMouseClicked="#Sign_In_clicked" prefHeight="37.0" prefWidth="90.0" styleClass="sign_button" stylesheets="@LoginScene.css" text="Sign In">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Sign_scene_button1" layoutX="14.0" layoutY="12.0" prefHeight="43.0" prefWidth="165.0" styleClass="sign_button" stylesheets="@LoginScene.css" text="Jewelery Store">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIcon fx:id="Create_jeweler_shop" glyphName="ASTERISK" size="2em" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="367.0" prefWidth="460.0">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="JEWELRY">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="48.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="APPLICATION">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="48.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="98.0" prefWidth="458.0">
+                                 <children>
+                                    <JFXButton fx:id="Admin_scene_button" layoutX="353.0" layoutY="13.0" onMouseClicked="#admin_clicked" prefHeight="37.0" prefWidth="90.0" styleClass="Admin_button" stylesheets="@LoginScene.css" text="Admin">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Back_to_layer" layoutX="126.0" layoutY="13.0" onMouseClicked="#back_to_layer_clicked" prefHeight="37.0" prefWidth="90.0" styleClass="Admin_button" stylesheets="@LoginScene.css" text="User">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="admin_sign_in" layoutX="220.0" layoutY="13.0" onMouseClicked="#admin_Sign_in_clicked" prefHeight="38.0" prefWidth="132.0" styleClass="Admin_button_Sign_In" stylesheets="@LoginScene.css" text="Admin Sign In">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="account_layer" layoutX="460.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="320.0">
+               <children>
+                  <VBox fx:id="Admin_sign_in_layer" prefHeight="460.0" prefWidth="320.0" stylesheets="@LoginScene.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="117.0" prefWidth="320.0">
+                           <children>
+                              <FontAwesomeIcon glyphName="USER_PLUS" size="4em">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </FontAwesomeIcon>
+                              <Label text="Admin Account">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="messagelabel_admin" alignment="CENTER" prefHeight="18.0" prefWidth="224.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Admin_Name" prefHeight="36.0" prefWidth="267.0" promptText="FirstName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Admin_lastName" prefHeight="36.0" prefWidth="267.0" promptText="LastName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Admin_email" prefHeight="36.0" prefWidth="267.0" promptText="Email" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Admin_username_register" prefHeight="36.0" prefWidth="267.0" promptText="UserName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <PasswordField fx:id="Admin_password" prefHeight="36.0" prefWidth="267.0" promptText="Password" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <JFXButton fx:id="Admin_Sing_In_button" onAction="#AdminAccount" prefHeight="36.0" prefWidth="267.0" style="-fx-background-color: #40e0d0;" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" text="Sing In" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="vbox_login" />
+                        <String fx:value="thirdside_backgroundcolor" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <VBox fx:id="layer1" prefHeight="460.0" prefWidth="320.0" stylesheets="@LoginScene.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="138.0" prefWidth="320.0">
+                           <children>
+                              <FontAwesomeIcon glyphName="USER" size="5em" />
+                              <Label text="Login Account">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="login_button_message" alignment="CENTER" prefHeight="18.0" prefWidth="224.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="login_Username" prefHeight="36.0" prefWidth="267.0" promptText="UserName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <TextField fx:id="login_showPassword" prefHeight="36.0" prefWidth="267.0" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                                    <PasswordField fx:id="Login_password_field" prefHeight="36.0" prefWidth="267.0" promptText="Password" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="14.0" prefWidth="320.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXCheckBox fx:id="login_checkBox" alignment="CENTER_RIGHT" checkedColor="#f5f75e" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" onAction="#loginShowPassword" text="Show Password" unCheckedColor="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="145.0" />
+                                 </HBox.margin>
+                              </JFXCheckBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <JFXButton fx:id="login_button" onAction="#Admin_button_on_Action" prefHeight="36.0" prefWidth="267.0" style="-fx-background-color: #40e0d0;" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" text="Login" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label fx:id="Password_forget" styleClass="parolamiunutum" stylesheets="@LoginScene.css" text="Parolamı Unuttum" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets right="30.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="vbox_login" />
+                        <String fx:value="thirdside_backgroundcolor" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <VBox fx:id="layer2" layoutX="10.0" layoutY="10.0" prefHeight="470.4" prefWidth="330.4" stylesheets="@LoginScene.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="117.0" prefWidth="320.0">
+                           <children>
+                              <FontAwesomeIcon glyphName="USER_PLUS" size="4em">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin></FontAwesomeIcon>
+                              <Label text="Register Account">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="messagelabel" alignment="CENTER" prefHeight="18.0" prefWidth="224.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="First_Name" prefHeight="36.0" prefWidth="267.0" promptText="FirstName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Last_Name" prefHeight="36.0" prefWidth="267.0" promptText="LastName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Register_email" prefHeight="36.0" prefWidth="267.0" promptText="Email" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Register_username" prefHeight="36.0" prefWidth="267.0" promptText="UserName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <PasswordField fx:id="Register_password" prefHeight="36.0" prefWidth="267.0" promptText="Password" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <JFXButton fx:id="Register_Sing_In_button" onAction="#registerAccount" prefHeight="36.0" prefWidth="267.0" style="-fx-background-color: #40e0d0;" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" text="Sing In" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="vbox_login" />
+                        <String fx:value="thirdside_backgroundcolor" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <VBox fx:id="layer_admin" layoutX="10.0" layoutY="10.0" prefHeight="460.0" prefWidth="320.0" stylesheets="@LoginScene.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="138.0" prefWidth="320.0">
+                           <children>
+                              <FontAwesomeIcon glyphName="SHIELD" size="5em" />
+                              <Label text="Admin Account">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Admin_button_message" alignment="CENTER" prefHeight="18.0" prefWidth="224.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <TextField fx:id="Admin_Username" prefHeight="36.0" prefWidth="267.0" promptText="UserName" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="Admin_shadowpassword" prefHeight="36.0" prefWidth="267.0" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                                    <PasswordField fx:id="Admin_password_field" prefHeight="36.0" prefWidth="267.0" promptText="Password" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="13.0" prefWidth="320.0">
+                           <children>
+                              <JFXCheckBox fx:id="Admin_checkBox" alignment="CENTER_RIGHT" checkedColor="#f5f75e" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" onAction="#AdminShowPassword" text="Show Password" unCheckedColor="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="180.0" />
+                                 </HBox.margin>
+                              </JFXCheckBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="Admin_shadowpassword1" prefHeight="36.0" prefWidth="267.0" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                                    <PasswordField fx:id="Admin_ID" prefHeight="36.0" prefWidth="267.0" promptText="Admin Id" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="320.0">
+                           <children>
+                              <JFXButton fx:id="login_button1" onAction="#Admin_button_on_Action" prefHeight="36.0" prefWidth="267.0" style="-fx-background-color: #40e0d0;" styleClass="right_side_buttons_radius" stylesheets="@LoginScene.css" text="Login" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="vbox_login" />
+                        <String fx:value="thirdside_backgroundcolor" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

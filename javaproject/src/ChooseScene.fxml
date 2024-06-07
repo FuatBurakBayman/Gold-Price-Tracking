@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseScene">
+   <children>
+      <VBox fx:id="nav_layer" prefHeight="610.0" prefWidth="330.0" styleClass="nav" stylesheets="@ChooseScene.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="96.0" prefWidth="226.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Users/fuatb/OneDrive/Masaüstü/jewelry-store.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="CHOOSE YOUR PRODUCT" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="45.0" prefWidth="330.0" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Ceyrek_btn" onAction="#Ceyrek_clicked" prefHeight="64.0" prefWidth="330.0" text="   ÇEYREK ALTIN" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Yarim_btn" onAction="#Yarim_clicked" prefHeight="64.0" prefWidth="330.0" text="   YARIM ALTIN" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="6.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Tam_btn" onAction="#Tam_clicked" prefHeight="64.0" prefWidth="330.0" text="   TAM ALTIN" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Ziynet_btn" onAction="#Ziynet_clicked" prefHeight="64.0" prefWidth="330.0" text="   ZİYNET ALTIN" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="8.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Pirlanta_btn" onAction="#Pirlanta_clicked" prefHeight="64.0" prefWidth="330.0" text="   PIRLANTA YÜZÜK" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="18.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Kupe_btn" onAction="#Kupe_clicked" prefHeight="64.0" prefWidth="330.0" text="   ALTIN KÜPE" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="16.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Bilezik_btn" onAction="#Bilezik_clicked" prefHeight="64.0" prefWidth="330.0" text="   ALTIN BİLEZİK" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="6.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <JFXButton fx:id="Takilar_btn" onAction="#Takilar_clicked" prefHeight="64.0" prefWidth="330.0" text="   TAKILAR" textFill="#636161">
+                     <graphic>
+                        <Circle fill="#727272" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                     </graphic>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="38.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="main_layer" layoutX="330.0" prefHeight="610.0" prefWidth="694.0" styleClass="right_side_layer" stylesheets="@ChooseScene.css">
+         <children>
+            <Label alignment="CENTER" layoutX="42.0" layoutY="107.0" prefHeight="395.0" prefWidth="610.0" text="MAKE YOUR SELECTION FROM THE LEFT SIDE">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Ceyrek_layer" layoutX="330.0" prefHeight="610.0" prefWidth="694.0" styleClass="right_side_layer" stylesheets="@ChooseScene.css" visible="false">
+         <children>
+            <Label layoutX="271.0" layoutY="47.0" text="ÇEYREK ALTIN">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Ceyrek_Eski_Determination_layer" layoutY="215.0" prefHeight="395.0" prefWidth="694.0" visible="false">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="211.0" text="Eski Çeyrek Maliyeti">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Ceyrek_Eski_Cost" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="242.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="220.0" text="Eski Çeyrek Has">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="470.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="216.0" text="Eski Çeyrek Kâr">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Ceyrek_Eski_profit" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="231.0" layoutY="122.0" prefHeight="44.0" prefWidth="231.0" spacing="20.0" stylesheets="@ChooseScene.css">
+               <children>
+                  <JFXButton fx:id="CeyrekEski_btn" onMouseClicked="#Ceyrek_eski" prefHeight="38.0" prefWidth="97.0" styleClass="right_side_choose_product_unselected" stylesheets="@ChooseScene.css" text="ESKİ" />
+                  <JFXButton fx:id="CeyrekYeni_btn" onMouseClicked="#Ceyrek_yeni" prefHeight="38.0" prefWidth="97.0" styleClass="right_side_choose_product_unselected" stylesheets="@ChooseScene.css" text="YENİ" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="280.0" layoutY="179.0" prefHeight="36.0" prefWidth="134.0" text="CHOOSE ANY ONE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Ceyrek_Yeni_Determination_layer" layoutX="-1.0" layoutY="215.0" prefHeight="395.0" prefWidth="694.0" visible="false">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="211.0" text="Yeni Çeyrek Maliyeti">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Ceyrek_Yeni_Cost" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="242.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="220.0" text="Yeni Çeyrek Has">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="470.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="216.0" text="Yeni Çeyrek Kâr">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Ceyrek_Yeni_profit" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Yarim_layer" layoutX="330.0" prefHeight="610.0" prefWidth="694.0" styleClass="right_side_layer" stylesheets="@ChooseScene.css" visible="false">
+         <children>
+            <Label layoutX="276.0" layoutY="48.0" text="YARIM ALTIN">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Yarim_Eski_Determination_layer" layoutY="215.0" prefHeight="395.0" prefWidth="694.0" visible="false">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="211.0" text="Eski Yarım Maliyeti">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Eski_Yarim_Cost" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="242.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="220.0" text="Eski Yarım Has">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="470.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="216.0" text="Eski Yarım Kâr">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Eski_Yarim_profit" editable="false" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="231.0" layoutY="122.0" prefHeight="44.0" prefWidth="231.0" spacing="20.0" stylesheets="@ChooseScene.css">
+               <children>
+                  <JFXButton fx:id="YarimEski_btn" prefHeight="38.0" prefWidth="97.0" styleClass="right_side_choose_product_unselected" stylesheets="@ChooseScene.css" text="ESKİ" />
+                  <JFXButton fx:id="YarimYeni_btn" prefHeight="38.0" prefWidth="97.0" styleClass="right_side_choose_product_unselected" stylesheets="@ChooseScene.css" text="YENİ" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="280.0" layoutY="179.0" prefHeight="36.0" prefWidth="134.0" text="CHOOSE ANY ONE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Yarim_Yeni_Determination_layer" layoutX="-1.0" layoutY="215.0" prefHeight="395.0" prefWidth="694.0">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="211.0" text="Yeni Yarım Maliyeti">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Yeni_Yarim_Cost" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="242.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="220.0" text="Yeni Yarım Has">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="470.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="216.0" text="Yeni Yarım Kâr">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Yeni_Yarim_Profit" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Tam_layer" layoutX="330.0" prefHeight="610.0" prefWidth="694.0" styleClass="right_side_layer" stylesheets="@ChooseScene.css" visible="false">
+         <children>
+            <Label layoutX="287.0" layoutY="46.0" text="TAM ALTIN">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Tam_Eski_Determination_layer" layoutY="215.0" prefHeight="395.0" prefWidth="694.0" visible="false">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="211.0" text="Eski Tam Maliyeti">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Eski_Tam_Cost" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="242.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="220.0" text="Eski Tam Has">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="470.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="216.0" text="Eski Tam Kâr">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Eski_Tam_profit" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="231.0" layoutY="122.0" prefHeight="44.0" prefWidth="231.0" spacing="20.0" stylesheets="@ChooseScene.css">
+               <children>
+                  <JFXButton fx:id="TamEski_btn" prefHeight="38.0" prefWidth="97.0" styleClass="right_side_choose_product_unselected" stylesheets="@ChooseScene.css" text="ESKİ" />
+                  <JFXButton fx:id="TamYeni_btn" prefHeight="38.0" prefWidth="97.0" styleClass="right_side_choose_product_unselected" stylesheets="@ChooseScene.css" text="YENİ" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="280.0" layoutY="179.0" prefHeight="36.0" prefWidth="134.0" text="CHOOSE ANY ONE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Tam_Yeni_Determination_layer" layoutX="-1.0" layoutY="215.0" prefHeight="395.0" prefWidth="694.0">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="211.0" text="Yeni Tam Maliyeti">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Yeni_Tam_Cost" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="242.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="220.0" text="Yeni Tam Has">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="470.0" prefHeight="273.0" prefWidth="209.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="210.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="216.0" text="Yeni Tam Kâr">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="161.0">
+                           <children>
+                              <TextField fx:id="Yeni_Tam_Profit" prefHeight="36.0" prefWidth="267.0" promptText="Fiyat" styleClass="right_side_buttons_radius" stylesheets="@ChooseScene.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
