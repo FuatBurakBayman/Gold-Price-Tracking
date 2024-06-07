@@ -4,6 +4,8 @@ This application has been developed using JavaFX and Scene Builder.
 
 The application is currently under development.
 
-bu uygulama sayesinde kullanıcılar çeyrek, yarım ve tam gibi çeşitli altın ürünlerini fiyatlarını daha kolay  görebilecek ve bu fiyatları kendi kar ve maliyet oranlarına göre dizayn edebilecektir. Böyleliklr ürünlerinin fiyatlarını daha kolay görebileceklerdir.
+bu uygulama sayesinde kullanıcılar çeyrek, yarım ve tam gibi çeşitli altın ürünlerini fiyatlarını daha kolay  görebilecek ve bu fiyatları kendi kar ve maliyet oranlarına göre dizayn edebilecektir. Böylelikle ürünlerinin fiyatlarını daha kolay görebileceklerdir.
 
 bu uygulama Javafx ve Scene Builder kullanılarak yapılmıştır.
+
+Uygulama geliştirme aşamasındadır.
